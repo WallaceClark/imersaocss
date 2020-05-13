@@ -1,0 +1,43 @@
+body {
+  background-image: url('http://www.vanessametonini.com.br/imersaocss/a1/img/fundo.jpg');
+  background-size: auto 100vh;                /* auto -> largura automática de proporção da tela
+                                                 vh -> view-port high, onde 100 significa 100% da altura da tela */
+  font-family: Arial;
+  height: 100vh;                              /* garante a altura do body ficar proporcional ao tamanho da tela */
+}
+
+.menu {
+  background-color: white;
+}
+
+/* seletor hierárquico*/
+.menu ul {
+  display: flex;                                 /* exibir flex -> todos ficarão um ao lado do outro */
+  justify-content: space-around;                 /* justificar conteúdo space-around -> deixará espaçamento ao redor dos elementos */
+}
+
+.menu li {
+ list-style: none; 
+}
+
+a {
+  color: teal;
+  text-decoration: none;
+}
+
+/*pseudpclasse a:hover*/
+a:hover {
+  text-decoration: underline;
+}
+
+/* seletor utilizando classe1, classe2 utilizará para as duas classes as mesmas propriedades e valores */
+.site-subtitle, 
+.site-title {
+  color: whitesmoke;
+  text-align: center;
+}
+
+/* seletor utilizando uma das classes acima com propriedades diferentes e que são únicas para apenas esta classe */
+.site-subtitle {
+ font-style: italic;
+}
